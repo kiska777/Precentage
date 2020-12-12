@@ -1,0 +1,61 @@
+body{
+    background-color: white;
+    height: 100%;
+    color: white;
+
+}
+#container{
+    height: 325px;
+    width: 350px;
+    background-color: rgba(0, 12, 61, 0.73);
+    border-radius: 25px;
+     margin-top: 10px;
+    margin-left: 425px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 75px 75px 75px 75px;
+    grid-template-areas:
+            ".bill-amount"
+            ".tip-procent"
+            ".tip-amount"
+            ".totall-bill"
+            "btn btn";
+    border: 5px solid ;
+    padding: 75px;
+    cursor: pointer;
+}
+#bill_amount{
+grid-area: bill-amount;
+}
+#tip_procent{
+    grid-area: tip-procent;
+}
+#tip_amount{
+grid-area: tip-amount;
+}
+#totall_bill{
+grid-area: totall-bill;
+}
+.input-styling{
+    height: 25px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#btn{
+    grid-area: btn;
+    height: 25px;
+    background-color: red;
+    width: 250px;
+    height: 75px;
+    margin-left: 50px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#center{
+    margin-top: 50px;
+    color: red;
+text-align: center;
+    text-transform: uppercase;
+}
